@@ -1,0 +1,199 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  margin: 0;
+  background-color: rgb(22, 32, 58);
+  text-align: center;
+  color: aliceblue;
+}
+section {
+  margin: 20px auto;
+  padding: 20px 100px;
+}
+.player {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.player .player-name {
+  padding: 10px;
+}
+.player .player-name input {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.player .player-name input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.player .player-name button {
+  background-color: #04aa6d;
+  border: none;
+
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.player .player-name button:hover {
+  background-color: #0cdd16c7;
+}
+#player-name:disabled {
+  opacity: 0.6;
+}
+#start-button:disabled {
+  background-color: gray;
+  color: white;
+
+  opacity: 0.6;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0 auto;
+  flex: 1;
+}
+.buttons .btn {
+  margin: 10px;
+  gap: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buttons button {
+  cursor: pointer;
+}
+.buttons img {
+  width: 100px;
+  height: 100px;
+}
+
+.results-table {
+  display: flex;
+  gap: 80px;
+}
+.results-table .card {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  flex: 1;
+  min-width: 150px;
+}
+.results-table .card .card-score {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card .card-result {
+  display: flex;
+  gap: 20px;
+}
+.result {
+  padding: 40px !important;
+}
+#result-versus {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+.card-decision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card-decision img {
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  display: block;
+}
+
+.game-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.game-results .reset-button button {
+  background-color: #04aa6d;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.game-results .reset-button button:hover {
+  background-color: #0cdd16c7;
+}
+.Game-winner {
+  display: flex;
+  height: 80px;
+  width: 70%;
+  color: #d3cdcd;
+  background-color: #102d70ec;
+  margin-top: 50px;
+
+  padding: 30px 200px;
+  border-radius: 10px;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.Game-winner p {
+  font-size: 30px;
+  font-weight: bold;
+
+  color: #d3cdcd;
+}
+.Game-winner button {
+  padding: 20px 40px;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #04aa6d;
+  cursor: pointer;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+}
+.Game-winner button:hover {
+  background-color: #0cdd16c7;
+}
+
+.Game-winner {
+  display: none;
+}

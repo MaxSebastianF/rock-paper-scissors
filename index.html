@@ -4,8 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper and scissors</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <header>
+      <h1>Rock Paper and scissors GAME</h1>
+    </header>
+
+    <section class="player">
+      <label for="namePlayer">Set your player name</label>
+      <div class="player-name">
+        <input type="text" id="player-name" placeholder="Enter your name" />
+        <button id="start-button" type="button">Start Game</button>
+      </div>
+      <p>Make your move</p>
+      <div class="buttons">
+        <button id="rock-button" class="btn" disabled>
+          <img src="assets/images/rock.png" alt="" />Rock
+        </button>
+        <button id="paper-button" class="btn" disabled>
+          <img src="assets/images/paper.png" alt="" />Paper
+        </button>
+        <button id="scissors-button" class="btn" disabled>
+          <img src="assets/images/scissors.png" alt="" />Scissors
+        </button>
+      </div>
+    </section>
+    <section class="results-table">
+      <div class="card">
+        <p id="card-name">Player score</p>
+        <div class="card-score" id="player-score">0</div>
+      </div>
+      <div class="card result">
+        <p>Results</p>
+        <div class="card-result">
+          <div class="card-decision">
+            <p id="card-decision-name">Player decision</p>
+            <img id="player-image-decision" src="" alt="" />
+          </div>
+          <div class="vs">
+            <p>VS</p>
+          </div>
+          <div class="card-decision">
+            <p class="">Computer decision</p>
+            <img id="computer-image-decision" src="" alt="" />
+          </div>
+        </div>
+        <p class="result-versus" id="result-versus">Make your choice!</p>
+
+        <p class="result-versus" id="round-number"></p>
+      </div>
+      <div class="card">
+        <p>Computer score</p>
+        <div class="card-score" id="computer-score">0</div>
+      </div>
+    </section>
+    <section class="game-results">
+      <div class="reset-button">
+        <button type="button" id="reset-game-button">Reset</button>
+      </div>
+      <div class="Game-winner">
+        <p class="winner-message">Winner message</p>
+        <button id="play-again-button" type="button">Play Again</button>
+      </div>
+    </section>
+
     <script src="assets/js/game.js"></script>
   </body>
 </html>
